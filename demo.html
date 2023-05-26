@@ -42,7 +42,7 @@
 //球
 var sphereGeometry = new THREE.SphereGeometry( 0.5, 32, 32 ); 
 var sphereMaterial = new THREE. MeshPhongMaterial( {color: 0xff8800,wireframe: true} );
-var sphere1 = new THREE.Mesh( sphereGeometry, sphereMaterial );
+var sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
 sphere.position.set(0.5, 0, -20 );
 scene.add( sphere );
 
