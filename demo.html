@@ -43,10 +43,8 @@ var sphereGeometry = new THREE.SphereGeometry( 0.5, 32, 32 );
 var sphereMaterial = new THREE. MeshPhongMaterial( {color: 0xff8800,wireframe: true} );
 var sphere1 = new THREE.Mesh( sphereGeometry, sphereMaterial );
 var sphere2 = new THREE.Mesh( sphereGeometry, sphereMaterial );
-sphere1.position.set( 1.3, 0, -5 );
-sphere2.position.set( -1.3, 0, -5 );
-scene.add( sphere1 );
-scene.add( sphere2 );
+sphere.position.set( 0, 0, 0 );
+scene.add( sphere );
 
     // 平行光源1
     var directionalLight1 = new THREE.DirectionalLight(0xffffff);
@@ -66,9 +64,7 @@ scene.add( sphere2 );
       // 箱を回転させる
       torus.rotation.y +=0.01;
       sphere1.rotation.y += 0.01;
-      sphere2.rotation.y += 0.01;
-
-      torus.position.z +=0.01;
+     
   
       renderer.render(scene, camera);
     };
