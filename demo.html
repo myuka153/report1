@@ -59,12 +59,13 @@ var cylinderGeometry = new THREE.CylinderGeometry( 0.5, 0.3, 0.5, 6 );
 //上の底面の半径、下の底面の半径、高さ、何角柱か
 var cylinderMaterial = new THREE.MeshPhongMaterial( {color: 0x0000ff} );
 var cylinder = new THREE.Mesh( cylinderGeometry, cylinderMaterial );
-cylinder.position.set( 0, 0, -5 );
+cylinder.position.set( -0.5, 0, -5 );
 
     const object = new THREE.Group();
     object.add(cone);
     object.add(cylinder);
     object.position.set(0,0,0);
+    scene.add(object)
     
     
     // 平行光源1
