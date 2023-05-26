@@ -30,7 +30,7 @@
 
 
       //ドーナッツ
-      var torusGeometry = new THREE.TorusGeometry( 10, 0.05, 24, 24 ); 
+      var torusGeometry = new THREE.TorusGeometry( 5, 0.1, 24, 24 ); 
      //半径、ドーナッツの太さ、ドーナッツのチューブ方向の分割数、水平方向の分割数
     var torusMaterial = new THREE. MeshToonMaterial( { color: 0xd66b00 } );
     var torus = new THREE.Mesh( torusGeometry, torusMaterial );
@@ -43,8 +43,7 @@
 var sphereGeometry = new THREE.SphereGeometry( 0.5, 32, 32 ); 
 var sphereMaterial = new THREE. MeshPhongMaterial( {color: 0xff8800,wireframe: true} );
 var sphere1 = new THREE.Mesh( sphereGeometry, sphereMaterial );
-var sphere2 = new THREE.Mesh( sphereGeometry, sphereMaterial );
-sphere.position.set( 0, 0, 0 );
+sphere.position.set(0.5, 0, -20 );
 scene.add( sphere );
 
     // 平行光源1
