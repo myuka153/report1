@@ -41,7 +41,7 @@
 
 
    //角すい〜円すい
-var coneGeometry = new THREE.ConeGeometry( 0.5, 0.5, 0); 
+var coneGeometry = new THREE.ConeGeometry( 0.45, 0.4, 0); 
 //半径、高さ、底面の分割数
 var coneMaterial = new THREE. MeshPhongMaterial( {color: 0xff0000} );
 var cone = new THREE.Mesh( coneGeometry, coneMaterial );
@@ -67,6 +67,8 @@ cylinder.position.set( 0, -1.25, -5 );
     object.add(cylinder);
     object.add(body);
     object.position.set(0,0,0);
+    scene.add(object)
+    object.position.set(0,-600,0);
     scene.add(object)
     
 
